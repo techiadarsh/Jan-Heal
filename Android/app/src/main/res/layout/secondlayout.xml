@@ -1,0 +1,111 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linear2"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#004957"
+    android:padding="10dp"
+    >
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/eyehead"
+                    android:text="Eye-Test"
+                    android:textColor="#fff"
+                    android:padding="20dp"/>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/eyehead"
+                    android:id="@+id/eyed">
+
+                 <EditText
+                     android:layout_height="wrap_content"
+                    android:layout_width="150dp"
+                    android:background="#FFF"
+                    android:textColor="#00C6AF"
+                    android:id="@+id/lefteye"
+                     android:hint="Left Eye"
+                     android:padding="8dp"
+                     />
+
+                <EditText
+                    android:layout_height="wrap_content"
+                    android:layout_width="150dp"
+                    android:background="#FFF"
+                    android:textColor="#00C6AF"
+                    android:id="@+id/righteye"
+                    android:layout_toRightOf="@id/lefteye"
+                    android:layout_marginLeft="10dp"
+                    android:hint="Right Eye"
+                    android:padding="8dp"
+
+                    />
+
+            </RelativeLayout>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@id/eyed"
+        android:id="@+id/weight"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#fff"
+        android:padding="8dp"
+        android:hint="Weight"
+
+        />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_weight="0.4"
+        android:id="@+id/height"
+        android:layout_below="@id/weight"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#fff"
+        android:padding="8dp"
+        android:hint="Height"
+        />
+
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_weight="0.4"
+        android:id="@+id/sugar"
+        android:layout_below="@id/height"
+        android:layout_marginTop="20dp"
+        android:background="#fff"
+        android:padding="8dp"
+        android:hint="Sugar"
+        />
+
+
+    <EditText android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:hint="Remarks"
+        android:id="@+id/remark"
+        android:layout_below="@id/sugar"
+        android:layout_marginTop="20dp"
+        android:background="#fff"
+        android:padding="8dp"
+        />
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#004957"
+    tools:context="com.sodevan.bhamaheal.MainActivity"
+    android:padding="30dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fa_heartbeat"
+        android:id="@+id/logo2"
+        android:textColor="#00C6AF"
+        android:textSize="100sp"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:hint="Aadhar No."
+        android:padding="10dp"
+        android:layout_below="@id/logo2"
+        android:id="@+id/aadnoet"
+        android:layout_marginTop="60dp"
+        />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:layout_below="@id/aadnoet"
+        android:layout_centerHorizontal="true"
+        android:textColor="#00C6AF"
+        android:id="@+id/justaor"
+        android:layout_marginTop="20dp"
+        />
+    <Button
+        android:id="@+id/ScanButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="&#xf02a; Scan Aadhar Qr Code"
+        android:layout_marginTop="30dp"
+        android:background="#00C6AF"
+        android:textColor="@color/colorWhite"
+        android:layout_below="@id/justaor"
+        android:textSize="20sp"
+
+
+ />
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ls="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/linear1"
+    android:background="#004957"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:paddingRight="30dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        >
+            <com.farbod.labelledspinner.LabelledSpinner
+                android:id="@+id/your_labelled_spinner"
+                ls:labelText="Blood Group"
+                ls:widgetColor="#00C6AF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="#fff"
+                android:padding="0dp"
+                android:layout_marginBottom="20dp"
+                />
+
+
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/et2"
+                android:textColor="#00B79D"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/your_labelled_spinner"
+                android:padding="10dp"
+                android:background="@drawable/shape1"
+                android:layout_marginBottom="10dp"
+                android:hint="Hemoglobin"
+
+
+
+
+                />
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et3"
+                android:textColor="#00B79D"
+                android:layout_below="@id/et2"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"
+                android:background="@drawable/shape1"
+                android:layout_marginBottom="10dp"
+                android:hint="RBC Count"
+
+
+
+
+                />
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/et4"
+                android:textColor="#00B79D"
+                android:layout_below="@id/et3"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"
+                android:background="@drawable/shape1"
+                android:layout_marginBottom="10dp"
+                android:hint="platelets"
+
+
+                />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/et5"
+                android:textColor="#00B79D"
+                android:layout_below="@id/et4"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"
+                android:background="@drawable/shape1"
+                android:hint="Total Cholestrol"
+
+                />
+
+    </RelativeLayout>
+
+</RelativeLayout>
