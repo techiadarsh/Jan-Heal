@@ -1,0 +1,11 @@
+library(sp)
+library(RColorBrewer)
+ind2=readRDS("/Users/kartiksharma/Downloads/IND_adm2.rds")
+up2 = (ind2[ind2$NAME_1=="Uttar Pradesh",])
+up2$NAME_2 = as.factor(up2$NAME_2)
+up2$fake.data = runif(length(up2$NAME_1))
+col_no = as.factor(as.numeric(cut(up2$fake.data, c(0,0.2,0.4,0.6,0.8,1))))
+levels(col_no) = c("1-2","3-4","5-6","7-8","9-10")
+up2$col_no = col_no
+myPalette = brewer.pal(5,"Greens")
+spplot(up2, "col_no", col=grey(.9), col.regions=myPalette,par.settings = list(axis.line = list(col =  'transparent')), main="Uttar Pradesh")
