@@ -1,7 +1,7 @@
 <?php
-$bhID=$_GET['bhid'];
-$aadhar=$_GET['aadhar'];
-$name=$_GET['name'];
+$bhID=$_REQUEST['bhid'];
+$aadhar=$_REQUEST['aadhar'];
+$name=$_REQUEST['name'];
 
 $host="localhost";
 $uname="root";
